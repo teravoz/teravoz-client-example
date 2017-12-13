@@ -10,8 +10,16 @@ Necessário Node.js 4 ou superior.
 
 ## Instalação
 
-git clone 
+Clone este repositório:
+```
+git clone https://github.com/teravoz/teravoz-client-example.git
+cd teravoz-client-example/
+```
+
+Execute o client:
+```
 node webhook.js
+```
 
 ## Uso
 
