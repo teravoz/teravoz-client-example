@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Teravoz API client</title>
+    <style>
+      body { padding: 50px; font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+      a { color: #00B7FF; }
+
+      #events { list-style-type: none; margin: 0; padding: 0; }
+      #events li { padding: 5px 10px; }
+      #events li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+  <body>
+    <h1>Teravoz events</h1>
+    <ul id="events"></ul>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      // escuta os eventos emitidos pela
+      socket.on('teravoz-event', function(event){
+        $('#events').prepend($('<li>').text(event));
+      });
+    </script>
+  </body>
+</html>

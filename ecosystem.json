@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "tac",
+      "script": "./index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss.SSS Z",
+      "merge_logs": true,
+      "out_file": "/var/log/pm2/tac.log",
+      "error_file": "/var/log/pm2/tac.log"
+    }
+  ]
+}
