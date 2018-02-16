@@ -33,4 +33,4 @@ node_modules/
 pids
 Thumbs.db
 typings/
-./recordings/*
+recordings/*.wav
